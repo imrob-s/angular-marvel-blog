@@ -1,0 +1,17 @@
+<div class="card mb-3 mx-auto">
+    <img src="{{ photoCover }}" class="card-img-top" alt=""/>
+    <div class="card-body">
+        <a [routerLink]="['']"><i class="fas fa-arrow-circle-left mb-3 fa-2x"></i></a>
+
+      <h1 class="card-title">{{ contentTitle }}</h1>
+      <p class="card-text">
+        {{ contentDescription }}
+      </p>
+      <p class="card-text">
+        <small class="text-muted">{{ contentDate }}</small>
+      </p>
+      <div class="d-grid d-md-flex justify-content-md-end">
+        <button class="btn btn-secondary" [routerLink]="['']">Voltar</button>
+      </div>
+    </div>
+  </div>

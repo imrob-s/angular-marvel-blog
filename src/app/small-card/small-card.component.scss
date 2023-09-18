@@ -1,0 +1,34 @@
+.card-body {
+    padding-top: 0px;
+    background-color: #111;
+}
+
+.col-md-4 {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        height: 105px;
+    }
+}
+
+.card-title > a {
+    color: #fbfbfb;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.row.g-0 {
+    background-color: #111;
+    display: flex;
+    align-items: flex-start;
+}
+
+hr {
+    margin-top: 0px;
+}

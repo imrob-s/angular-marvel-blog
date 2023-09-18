@@ -1,0 +1,14 @@
+<div class="card" style="max-width: 540px;">
+    <div class="bg-image hover-overlay" mdbRipple rippleColor="light">
+    <img src="{{ photoCover }}" class="card-img-top" alt="Fissure in Sandstone"/>
+    <a [routerLink]="['content', id]">
+        <div class="mask"></div>
+    </a>
+    </div>
+    <div class="card-body bg-dark mt-3">
+      <h4 class="card-title">{{ cardTitle }}</h4>
+      <p class="card-text">{{ cardDescription }}</p>
+      <a [routerLink]="['content', id]" class="btn btn-danger">Saiba mais</a>
+    </div>
+    <hr class="hr hr-blurry bg-dark" />
+</div>

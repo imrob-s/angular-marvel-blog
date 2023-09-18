@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://www.linkedin.com/in/robsilva1/">
+        <img
+          src="https://media.licdn.com/dms/image/D4D03AQFsjhkeALQtMg/profile-displayphoto-shrink_200_200/0/1694372437743?e=1700697600&v=beta&t=Hijub-7mW8kZHm2y7pkMRAbtbDxL-dy-O30haewXfjk"
+          height="40"
+          alt=""
+          loading="lazy"
+          class="rounded-circle"
+          style="margin-top: -1px;"
+        />
+      </a>
+      <a class="navbar-brand mb-0 h1" href="#">Rob Dev</a>
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        (click)="centered.toggle()"
+        aria-controls="navbarCenteredExample"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarCenteredExample"
+        mdbCollapse
+        #centered="mdbCollapse"
+      >
+        <!-- Left links -->
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="https://www.linkedin.com/in/robsilva1/">
+              Linkedin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/imrob-s">
+              GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+              Youtube</a
+            >
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
