@@ -1,6 +1,6 @@
 <app-title></app-title>
 <div class="container__articles px-4 mx-auto">
-  <div class="articles__main row px-5">
+  <div class="row px-md-0">
     <div class="col-md-6">
       <!-- Conteúdo do app-big-card -->
       <app-big-card
@@ -11,9 +11,8 @@
         [cardDescription]="lastItem.description"
       ></app-big-card>
     </div>
-    <div class="col-md-6">
       <!-- Conteúdo dos app-small-card -->
-      <div class="col-12">
+      <div class="col-md-6">
         <app-small-card
           *ngFor="let item of previousItems"
           [id]="item.id"
@@ -22,6 +21,5 @@
           [cardTitle]="item.title"
         ></app-small-card>
       </div>
-    </div>
   </div>
 </div>

@@ -1,27 +1,27 @@
-<div class="card mb-3" style="max-width: 540px;">
-    <div class="row g-0">
-      <div class="col-md-4">
-        <img
-          src="{{ photoCover }}"
-          alt="Trendy Pants and Shoes"
-          class="img-fluid rounded-start"
-          [class.mb-3]="isMobileView"
-        />
+<div class="container-fluid px-md-0 gx-0">
+  <div class="card mb-3">
+      <div class="articles__side row gx-3 bg-dark">
+          <div class="container__img col-md-5 mb-3">
+              <!-- Imagem -->
+              <img
+                  src="{{ photoCover }}"
+                  alt="Trendy Pants and Shoes"
+                  class="img-fluid rounded-start"
+              />
+          </div>
+          <div class="col-md-7 articles__side">
+              <div class="card-body px-0">
+                  <!-- Título -->
+                  <h5 class="card-title">
+                      <a [routerLink]="['content', id]">{{ cardTitle }}</a>
+                  </h5>
+                  <!-- Data -->
+                  <p class="card-text">
+                      <small class="text-muted">{{ cardDate }}</small>
+                  </p>
+              </div>
+          </div>
       </div>
-      <div class="col-md-8">
-        <div class="card-body">
-          <h5 class="card-title">
-            <a [routerLink]="['content', id]"> {{ cardTitle }} </a>
-        </h5>
-          <!-- <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in to
-            additional content. This content is a little bit longer.
-          </p> -->
-          <p class="card-text">
-            <small class="text-muted">{{ cardDate }}</small>
-          </p>
-        </div>
-    </div>
-</div>
+  </div>
 </div>
 <hr class="hr hr-blurry bg-dark" />

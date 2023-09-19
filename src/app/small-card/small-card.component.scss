@@ -5,23 +5,23 @@
 
 .col-md-4 {
     background-color: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-        height: 105px;
-    }
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // img {
+    //     height: 105px;
+    // }
 }
 
 .card-title > a {
     color: #fbfbfb;
 }
 
-.card {
-    display: flex;
-    align-items: flex-start;
+// .card {
+//     display: flex;
+//     align-items: flex-start;
 
-}
+// }
 
 .row.g-0 {
     background-color: #111;
@@ -31,4 +31,28 @@
 
 hr {
     margin-top: 0px;
+}
+
+@media screen and (max-width: 768px) { 
+    .container__img {
+        max-width: 230px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .articles__side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .card-body {
+        max-width: 250px;
+    }
+    .container-fluid {
+        display: flex;
+        justify-content: center;
+    }
 }
